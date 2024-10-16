@@ -16,7 +16,7 @@
         }
         .book-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
         }
         .book {
@@ -26,9 +26,11 @@
             background-color: #fff;
         }
         .book img {
-            width: 100px;
-            height: 150px;
+            width: 100%;
+            max-width: 1280px;
+            height: auto;
             object-fit: cover;
+            aspect-ratio: 16/9; /* Pour garder les proportions 1280x720 */
         }
         .book-title {
             margin-top: 10px;
@@ -40,13 +42,12 @@
 
     <h1>Bienvenue dans Mon Bookstore</h1>
     <div class="book-grid">
-        <!-- Chaque livre sera ajouté ici -->
         <div class="book">
-            <img src="https://via.placeholder.com/100x150" alt="Livre 1">
+            <img src="https://via.placeholder.com/1280x720" alt="Livre 1">
             <div class="book-title">Titre du Livre 1</div>
         </div>
         <div class="book">
-            <img src="https://via.placeholder.com/100x150" alt="Livre 2">
+            <img src="https://via.placeholder.com/1280x720" alt="Livre 2">
             <div class="book-title">Titre du Livre 2</div>
         </div>
     </div>
