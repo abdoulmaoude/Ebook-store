@@ -30,7 +30,7 @@
             max-width: 1280px;
             height: auto;
             object-fit: cover;
-            aspect-ratio: 16/9; /* Pour garder les proportions 1280x720 */
+            aspect-ratio: 16/9;
         }
         .book-title {
             margin-top: 10px;
@@ -43,11 +43,15 @@
     <h1>Bienvenue dans Mon Bookstore</h1>
     <div class="book-grid">
         <div class="book">
-            <img src="https://via.placeholder.com/1280x720" alt="Livre 1">
+            <a href=".pdf" download="ebook1.pdf">
+                <img src="https://via.placeholder.com/1280x720" alt="Livre 1">
+            </a>
             <div class="book-title">Titre du Livre 1</div>
         </div>
         <div class="book">
-            <img src="https://via.placeholder.com/1280x720" alt="Livre 2">
+            <a href="path_to_your_ebook/ebook2.pdf" download="ebook2.pdf">
+                <img src="https://via.placeholder.com/1280x720" alt="Livre 2">
+            </a>
             <div class="book-title">Titre du Livre 2</div>
         </div>
     </div>
