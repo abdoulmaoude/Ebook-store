@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .book {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .book img {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .book-title {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenue dans Mon Bookstore</h1>
+    <div class="book-grid">
+        <!-- Chaque livre sera ajouté ici -->
+        <div class="book">
+            <img src="https://via.placeholder.com/100x150" alt="Livre 1">
+            <div class="book-title">Titre du Livre 1</div>
+        </div>
+        <div class="book">
+            <img src="https://via.placeholder.com/100x150" alt="Livre 2">
+            <div class="book-title">Titre du Livre 2</div>
+        </div>
+    </div>
+
+</body>
+</html>
